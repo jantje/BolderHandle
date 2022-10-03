@@ -34,27 +34,22 @@
 		<link>
 			<name>core/core</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.8.2/cores/arduino</locationURI>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.8.5/cores/arduino</locationURI>
 		</link>
 		<link>
 			<name>core/variant</name>
 			<type>2</type>
-			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.8.2/variants/standard</locationURI>
+			<locationURI>ECLIPSE_HOME/arduinoPlugin/packages/arduino/hardware/avr/1.8.5/variants/standard</locationURI>
 		</link>
 		<link>
 			<name>libraries/BlinkLed</name>
 			<type>2</type>
-			<location>C:/Users/jan/git/ArduinoLibraries/BlinkLed</location>
+			<location>C:/Users/gast1/git/ArduinoLibraries/BlinkLed</location>
 		</link>
 		<link>
 			<name>libraries/FastRunningMedian</name>
 			<type>2</type>
-			<location>C:/Users/jan/git/marvinLibraries/libraries/FastRunningMedian</location>
-		</link>
-		<link>
-			<name>libraries/SimpleSwitch</name>
-			<type>2</type>
-			<location>C:/Users/jan/git/ArduinoLibraries/SimpleSwitch</location>
+			<location>C:/Users/gast1/git/marvinLibraries/libraries/FastRunningMedian</location>
 		</link>
 	</linkedResources>
 </projectDescription>
