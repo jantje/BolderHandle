@@ -10,7 +10,10 @@
 int convertAnalogToMM(int analogInput)
 	{
 		//TOFIX: I am assuming a lineair correlation and that is wrong
-		return map(analogInput, 64, 650, 800, 100);
+
+return analogInput;
+
+//		return map(analogInput, 64, 650, 800, 100);
 
 	}
 
@@ -42,7 +45,15 @@ void IRDistanceSensor::loop()
 		if ((loopMillis - lastDistancesSensorRead) > myReadDelay)
 			{
 				lastDistancesSensorRead = loopMillis;
-				mydistanceReads.addValue(convertAnalogToMM(analogRead(myPin)));
+				int analogValue=analogRead(myPin);
+				int convertedValue=convertAnalogToMM(analogValue);
+				mydistanceReads.addValue(convertedValue);
 				mydistance = mydistanceReads.getMedian();
+//				Serial.print ("IR sensor loop analog value ");
+//				Serial.print (analogValue);
+//				Serial.print (" MM value ");
+//				Serial.print (convertedValue);
+//				Serial.print (" median ");
+//				Serial.println (mydistance);
 			}
 	}
