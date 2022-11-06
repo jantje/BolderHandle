@@ -49,7 +49,12 @@
 		<link>
 			<name>libraries/FastRunningMedian</name>
 			<type>2</type>
-			<location>C:/Users/gast1/git/marvinLibraries/libraries/FastRunningMedian</location>
+			<location>C:/Users/gast1/git/ArduinoLibraries/FastRunningMedian</location>
+		</link>
+		<link>
+			<name>libraries/SimpleSwitch</name>
+			<type>2</type>
+			<location>C:/Users/gast1/git/ArduinoLibraries/SimpleSwitch</location>
 		</link>
 	</linkedResources>
 </projectDescription>

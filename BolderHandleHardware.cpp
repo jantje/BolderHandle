@@ -2,7 +2,7 @@
 #include "DistanceSensorIR.h"
 // pin info
 #define distanceSensorPin  A0
-#define ActiveSwitchPin  2
+
 
 #define LEDPin  11
 

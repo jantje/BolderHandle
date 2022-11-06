@@ -3,7 +3,7 @@
 #include "BlinkLed.h"
 #include "DistanceSensorInterface.h"
 #include "MotorPWM2.h"
-//#include "SimpleSwitch.h"
+#include "SimpleSwitch.h"
 
 
 
