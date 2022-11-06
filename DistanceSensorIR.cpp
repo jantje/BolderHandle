@@ -5,7 +5,7 @@
  *      Author: jan
  */
 
-#include "IRDistanceSensor.h"
+#include "DistanceSensorIR.h"
 
 int convertAnalogToMM(int analogInput)
 	{
@@ -17,7 +17,7 @@ return analogInput;
 
 	}
 
-IRDistanceSensor::IRDistanceSensor(uint8_t readPin, uint16_t readDelay, uint16_t zeroPosition)
+DistanceSensorIR::DistanceSensorIR(uint8_t readPin, uint16_t readDelay, uint16_t zeroPosition)
 	{
 		myPin = readPin;
 		myReadDelay = readDelay;
@@ -25,7 +25,7 @@ IRDistanceSensor::IRDistanceSensor(uint8_t readPin, uint16_t readDelay, uint16_t
 		mydistance = ERROR_DISTANCE;
 	}
 
-void IRDistanceSensor::setup()
+void DistanceSensorIR::setup()
 	{
 		pinMode(myPin, INPUT);
 		analogRead(myPin);
@@ -39,7 +39,7 @@ void IRDistanceSensor::setup()
 			}
 	}
 
-void IRDistanceSensor::loop()
+void DistanceSensorIR::loop()
 	{
 		static uint32_t lastDistancesSensorRead = 0;
 		if ((loopMillis - lastDistancesSensorRead) > myReadDelay)
