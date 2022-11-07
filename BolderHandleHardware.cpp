@@ -1,5 +1,6 @@
 #include "BolderHandle.h"
 #include "DistanceSensorIR.h"
+#include "DistanceSensorVL53L0X.h"
 // pin info
 #define distanceSensorPin  A0
 
@@ -14,6 +15,7 @@
 
 
 BlinkLed myBlinkLed(LEDPin, 1000, 2000);
-DistanceSensorIR distanceSensor(distanceSensorPin, DISTANCE_SENSOR_READ_TIME, HANDLE_CENTRAL_POSITION);
+//DistanceSensorIR distanceSensor(distanceSensorPin, DISTANCE_SENSOR_READ_TIME, HANDLE_CENTRAL_POSITION);
+DistanceSensorVL53L0X distanceSensor(true,  HANDLE_CENTRAL_POSITION);
 DistanceSensorInterface &myDistanceSensor=distanceSensor;
 //SimpleSwitch activeSwitch(ActiveSwitchPin, HIGH);
